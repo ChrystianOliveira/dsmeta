@@ -3,6 +3,7 @@ package com.devsupeior.dsmeta.services;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.ZoneId;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -28,5 +29,8 @@ public class SaleService {
 		return saleRepository.findSales(min,max,pageable);
 	}
 	
+	public Optional<Sale> findSaleById(Long id){
+		return saleRepository.findById(id);
+	}
 	
 }
