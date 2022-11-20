@@ -1,5 +1,6 @@
 package com.devsupeior.dsmeta.resource;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,6 +28,11 @@ public class SaleResource {
 	@GetMapping(path="/{id}")
 	public Optional<Sale> findSaleById(@PathVariable Long id){
 		return saleService.findSaleById(id);
+	}
+	
+	@GetMapping(path="/all")
+	public List<Sale> findSalesAll(){
+		return saleService.findSalesAll();
 	}
 	
 	@GetMapping

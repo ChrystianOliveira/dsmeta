@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; 
+}
+
+:root {
+   --bg-black: #000;
+   --color-white: #fff;
+   --color-card: #283142;
+   --color-violet: #676FFF;
+   --color-bg-box: #1B2531;
+   --color-border-box: #384459;
+   --color-say-box: #9AAABE;
+   --color-thead-table: #E9E9E9; 
+   --color-tbody-table: #CFCFCF;
+   --colo-tr-table: #5F6E82;
+   --color-tbody-tr-odd-table: #242C3B;
+   --color-border-btn: #ff6b72;
+   --color-bg-btn: rgba(255, 107, 114, 0.1);
+}
+
+html, body {
+   background-color: var(--bg-black);
+   color: var(--color-white);
+}
+
+a {
+   color: var(--color-white);
+   text-decoration: none
+}
+
+a:hover {
+   color: var(--color-violet);
+   text-decoration: none;
+}
+
+.dsmeta-container {
+   width: 100%;
+   max-width: 900px;
+   margin: 0 auto;
+}
+
+#sales {
+   padding: 40px 10px;
+}
